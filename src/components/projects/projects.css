@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+#projectsContainer {
+    width: 100%;
+    background-image: url("../../assets/backgrounds/desk-with-objects.jpg");
+    background-size: cover;
+    background-position: 50% 60%;
+    background-attachment: fixed;
+    padding: 50px 0 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+#containerProjectsCards {
+    width: 90%;
+    max-width: 1500px;
+    height: 450px;
+    background-color: rgba(73, 80, 87, 0.5);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.projectCard {
+    max-width: 90%;
+    height: 400px;
+    margin: 0 1%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    flex-shrink: 0;
+    transition: 0.5s;
+}
+
+.titleContainer {
+    display: flex;
+}
+
+.cardNumber {
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    background-color: #212529;
+    border-radius: 50%;
+    box-shadow: -1px 1px 2px black;
+    color: #F8F9FA;
+    font-family: "Roboto Slab";
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    animation: pulse 4s infinite;
+}
+
+@keyframes pulse {
+    0% {scale: 0.98;}
+    25% {margin: 10px 15px 20px 15px; box-shadow: -2px 2px 4px black;}
+    50% {scale: 1.02; box-shadow: -3px 3px 6px black;}
+    75% {margin: 20px 15px 10px 15px; box-shadow: -2px 2px 4px black;}
+    100% {scale: 0.98;}
+}
+
+.cardTitle {
+    height: 60px;
+    margin: 10px 0;
+    padding: 0 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    background-color: rgba(73, 80, 87, 0.7);
+    border-radius: 10px;
+    color: #F8F9FA;
+    font-family: "Roboto Slab";
+    font-weight: 700;
+    font-size: 25px;
+    transition: 1s;
+}
+
+.cardText {
+    height: 220px;
+    margin: 0 15px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    background-color: rgba(33, 37, 41, 0.7);
+    border-radius: 10px;
+    color: #F8F9FA;
+    font-family: "Titillium Web";
+    font-size: 20px;
+    transition: 1s;
+}
+
+.cardLinks {
+    height: 100px;
+    margin-left: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: 1s;
+}
+
+.linkCard {
+    width: 150px;
+    height: 50px;
+    border-radius: 27px;
+    border: 2px solid #F8F9FA;
+    font-family: "Roboto Slab";
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.linkDeploy {
+    background-color: #212529;
+    color: #F8F9FA;
+}
+
+.linkDeploy:hover {
+    background-color: #F8F9FA;
+    color: #212529;
+}
+
+.linkGithub {
+    background-color: #F8F9FA;
+    color: #212529;
+}
+
+.linkGithub:hover {
+    background-color: #212529;
+    color: #F8F9FA;
+}
+
+@media (max-width: 480px) {
+    .cardTitle {
+        max-width: 60%;
+        font-size: 13px;
+    }
+
+    .cardText {
+        max-width: 90%;
+        font-size: 10px;
+    }
+
+    .cardLinks {
+        max-width: 100%;
+        margin-left: 0;
+    }
+}

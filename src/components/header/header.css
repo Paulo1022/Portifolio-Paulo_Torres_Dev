@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+#headerContainer {
+    width: 100%;
+    height: 90px;
+    padding: 0 1%;
+    box-sizing: border-box;
+    background-color: #F8F9FA;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 1px 7px 1px #495057;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    transition: 0.5s;
+    z-index: 10;
+}
+
+#nameTitle {
+    font-weight: 900;
+    font-size: 35px;
+    font-family: 'Roboto Slab';
+    padding-left: 20px;
+    color: #495057;
+}
+
+.headerSpan {
+    color: black;
+    transition: 0.5s;
+}
+
+#headerLinks {
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.option {
+    margin: 0 10px;
+    font-size: 20px;
+    font-family: 'Montserrat';
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.option:hover {
+    transform: scale(1.15);
+}
+
+#contacts {
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.headerIcon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+@media (max-width: 760px) {
+
+    #headerContainer {
+        display: block;
+        height: 110px;
+    }
+
+    #headerLinks {
+        margin-top: 15px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    #nameTitle {
+        font-size: 30px;
+    }
+}

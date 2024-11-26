@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+#bannerContainer {
+    width: 100%;
+    min-height: 600px;
+    background-image: url("../../assets/backgrounds/background-image_notebook.jpg");
+    background-size: cover;
+    background-position: 50% 70%;
+    background-attachment: fixed;
+    padding-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bannerAboutMe {
+    width: 50%;
+    padding: 2%;
+}
+
+/* #bannerText {
+
+} */
+
+#textTitle {
+    font-family: "Roboto Slab";
+    font-size: 50px;
+    font-weight: 600;
+    color: #CED4DA;
+}
+
+.bannerSpan {
+    font-size: 70px;
+    color: #F8F9FA;
+}
+
+#piscarSpan {
+    animation: blinking 1s infinite;
+}
+
+@keyframes blinking {
+    0% {color: #F8F9FA;}
+    50% {color: #212529;}
+    100% {color: #F8F9FA;}
+}
+
+#textBody {
+    color: #F8F9FA;
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+
+#bannerLinks {
+    width: 70%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.link {
+    width: 150px;
+    height: 50px;
+    background-color: #212529;
+    color: #CED4DA;
+    font-family: "Roboto Slab";
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid #CED4DA;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.link:hover {
+    background-color: #CED4DA;
+    color: black;
+}
+
+#bannerImage {
+    width: 20%;
+    height: 20vw;
+    box-sizing: border-box;
+    margin: 2%;
+    background-color: #343A40;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+@media (max-width: 1500px) {
+    
+    #bannerImage {
+        width: 30%;
+        height: 30vw;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    #textTitle {
+        font-size: 40px;
+    }
+
+    .bannerSpan {
+        font-size: 55px;
+    }
+
+    #bannerLinks {
+        width: 80%;
+    }
+
+    .link {
+        width: 100px;
+        height: 40px;
+        font-size: 15px;
+        border: 1px solid #CED4DA;
+        
+    }
+
+    #bannerImage {
+        width: 35%;
+        height: 35vw;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    #bannerContainer {
+        flex-direction: column-reverse;
+    }
+
+    #bannerAboutMe {
+        width: 90%;
+        padding: 5%;
+    }
+
+    #bannerImage {
+        width: 70%;
+        height: 70vw;
+    }
+}
