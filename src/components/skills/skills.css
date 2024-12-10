@@ -140,24 +140,24 @@
 @media (max-width: 768px) {
     
     #containerSkillsCardsClosed {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     #containerSkillsCardsOpened {
         height: 1200px;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 480px) {
     
     #containerSkillsCardsClosed {
-        height: 800px;
-        grid-template-columns: repeat(2, 1fr);
+        height: 1200px;
+        grid-template-columns: repeat(1, 1fr);
     }
 
     #containerSkillsCardsOpened {
-        height: 1600px;
-        grid-template-columns: repeat(2, 1fr);
+        height: 2400px;
+        grid-template-columns: repeat(1, 1fr);
     }
 }

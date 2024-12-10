@@ -54,11 +54,11 @@ function Header() {
                 _Dev /&gt;
             </div>
             <div id="headerLinks">
-                <Option href="#bannerContainer">About Me</Option>
-                <Option href="#projectsContainer">Projects</Option>
+                <Option href="#bannerContainer">Sobre Mim</Option>
+                <Option href="#projectsContainer">Projetos</Option>
                 <Option href="#skillsContainer">Skills</Option>
                 <div id="contacts">
-                    <a href="https://wa.me/5561998844002" target="blank">
+                    <a href="https://wa.me/5561998406766" target="blank">
                         <BsWhatsapp
                             className="headerIcon"
                             style={{color: scrolled? "#F8F9FA" : "black"}}

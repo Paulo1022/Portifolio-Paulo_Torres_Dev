@@ -8,18 +8,40 @@ import {
     SiJavascript,
     SiReact,
     SiNodedotjs,
-    SiNextdotjs,
     SiFirebase 
 } from "react-icons/si";
 
 const cards = [
-    {image: <SiHtml5 className="skillCardImage" id="html" />, title: "HTML5", text: ""},
-    {image: <SiCss3 className="skillCardImage" id="css" />, title: "CSS3", text: ""},
-    {image: <SiJavascript className="skillCardImage" id="javascript" />, title: "JavaScript", text: ""},
-    {image: <SiReact className="skillCardImage" id="react" />, title: "React", text: ""},
-    {image: <SiNodedotjs className="skillCardImage" id="node" />, title: "NodeJS", text: ""},
-    {image: <SiNextdotjs className="skillCardImage" id="next" />, title: "NextJS", text: ""},
-    {image: <SiFirebase className="skillCardImage" id="firebase" />, title: "FireBase", text: ""}
+    {
+        image: <SiHtml5 className="skillCardImage" id="html" />,
+        title: "HTML5",
+        text: "Como todo bom Desenvolvedor Front-End utilizei conhecimentos de HTML para a estruturação e acessibilidade das páginas."
+    },
+    {
+        image: <SiCss3 className="skillCardImage" id="css" />,
+        title: "CSS3",
+        text: "Tenho proficiencia nas Habilidades com responsividade, animações, adaptabilidade das páginas e layouts flexíveis."
+    },
+    {
+        image: <SiJavascript className="skillCardImage" id="javascript" />,
+        title: "JavaScript",
+        text: "Usado para a interatividade geral em praticamente todas as aplicações. Presente também na manipulação de DOM e chamado de APIs."
+    },
+    {
+        image: <SiReact className="skillCardImage" id="react" />,
+        title: "React",
+        text: "Sólido conhecimentos em Componentização, JSX em interfaces, Hooks para gestão de estado, Context API na comunicação entre componentes e Routing com navegação entre paginas."
+    },
+    {
+        image: <SiNodedotjs className="skillCardImage" id="node" />,
+        title: "NodeJS",
+        text: "Através do Node, tive contato mais direto (apesar de não domínio) com aplicações do Back-End e banco de dados como MongoDB e PostgreSQL"
+    },
+    {
+        image: <SiFirebase className="skillCardImage" id="firebase" />,
+        title: "FireBase",
+        text: "Tenho contato com diversas funcionalides do Firebase, como Realtime Database, Cloud Functions e Hosting"
+    }
 ];
 
 function Skills() {
