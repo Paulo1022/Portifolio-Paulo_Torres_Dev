@@ -1,12 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./header.css";
 import { BsWhatsapp } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa6";
 import styled from "styled-components";
+import { LanguageContext } from "../../contexts/languageContext";
+import USA from "../../assets/flags/united-states.png";
+import BRA from "../../assets/flags/brazil-.png";
 
 function Header() {
 
     let [scrolled, setScrolled] = useState(false);
+    const {languageEn, setLanguageEn} = useContext(LanguageContext);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -25,6 +29,15 @@ function Header() {
         };
 
     }, []);
+
+    const Image = styled.div`
+        width: 30px;
+        height: 30px;
+        background-image: url(${languageEn? BRA : USA});
+        background-size: cover;
+        background-position: 50% 50%;
+        cursor: pointer;
+    `;
 
     const Option = styled.a`
         margin: 0 10px;
@@ -54,8 +67,9 @@ function Header() {
                 _Dev /&gt;
             </div>
             <div id="headerLinks">
-                <Option href="#bannerContainer">Sobre Mim</Option>
-                <Option href="#projectsContainer">Projetos</Option>
+                <Image onClick={() => setLanguageEn(!languageEn)} />
+                <Option href="#bannerContainer">{languageEn? "About Me" : "Sobre Mim"}</Option>
+                <Option href="#projectsContainer">{languageEn? "Projects" : "Projetos"}</Option>
                 <Option href="#skillsContainer">Skills</Option>
                 <div id="contacts">
                     <a href="https://wa.me/5561998406766" target="blank">

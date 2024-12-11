@@ -1,19 +1,22 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./banner.css";
+import { LanguageContext } from "../../contexts/languageContext";
 
 function Banner() {
+
+    const { languageEn } = useContext(LanguageContext);
 
     return (
         <div id="bannerContainer">
             <div id="bannerAboutMe">
                 <div id="bannerText">
                     <hi id="textTitle">
-                        Olá! Sou o
+                        {languageEn? "Hi! I'm" : "Olá! Sou o"}
                         <br/>
                         <span className="bannerSpan">Paulo Torres!</span>
                         <span className="bannerSpan" id="piscarSpan">_</span>
                         <br/>
-                        Desenvolverdor Front-End
+                        {languageEn? "Front-End Developer" : "Desenvolverdor Front-End"}
                     </hi>
                     <p id="textBody">
                         Oi, sou Paulo Torres, desenvolvedor Front-End com base em Brasília. Com 1 ano de experiência,
