@@ -28,8 +28,8 @@ function Banner() {
                     </p>
                 </div>
                 <div id="bannerLinks">
-                    <a className="link" id="curriculo" href="a">&lt;Curriculo /&gt;</a>
-                    <a className="link" id="email" href="a">&lt;Email /&gt;</a>
+                    <a className="link" id="curriculo" href="https://drive.google.com/file/d/1e-020TinKATGF_boVQ9vyCAg8ICu9d-o/view?usp=drive_link">&lt;{languageEn? "Resume" : "Currículo"} /&gt;</a>
+                    <a className="link" id="email" href="mailto:pauloigortorres@hotmail.com">&lt;Email /&gt;</a>
                 </div>
             </div>
             <div id="bannerImage"></div>
