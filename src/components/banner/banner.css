@@ -3,9 +3,9 @@
 #bannerContainer {
     width: 100%;
     min-height: 600px;
-    background-image: url("../../assets/backgrounds/background-image_notebook.jpg");
+    background-image: url("../../assets/backgrounds/gray-background_image.jpg");
     background-size: cover;
-    background-position: 50% 70%;
+    background-position: 50% 60%;
     background-attachment: fixed;
     padding-top: 90px;
     padding-bottom: 60px;
@@ -45,7 +45,7 @@
     100% {color: #F8F9FA;}
 }
 
-#textBody {
+.textBody {
     color: #F8F9FA;
     font-family: 'Montserrat';
     font-weight: 500;
@@ -86,7 +86,9 @@
     height: 20vw;
     box-sizing: border-box;
     margin: 2%;
-    background-color: #343A40;
+    background-image: url(../../assets/backgrounds/imagem_portifólio-01.jpg);
+    background-position: center;
+    background-size: cover;
     border: 2px solid black;
     border-radius: 50%;
 }

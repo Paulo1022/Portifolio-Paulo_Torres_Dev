@@ -51,7 +51,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
     animation: pulse 4s infinite;
 }
 

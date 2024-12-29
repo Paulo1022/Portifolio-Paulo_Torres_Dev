@@ -7,9 +7,9 @@
 
 #skillsContainer {
     width: 100%;
-    background-image: url("../../assets/backgrounds/gray-background_image.jpg");
+    background-image: url("../../assets/backgrounds/background-image_notebook.jpg");
     background-size: cover;
-    background-position: 50% 60%;
+    background-position: 50% 70%;
     background-attachment: fixed;
     padding: 80px 0 50px 0;
 }

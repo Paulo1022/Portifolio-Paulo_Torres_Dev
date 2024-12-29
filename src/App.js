@@ -18,7 +18,7 @@ function App() {
       <Banner />
       <Division title={languageEn? "Projects" : "Projetos"} />
       <Projects />
-      <Division title="Skills" />
+      <Division title={languageEn? "Skills" : "Habilidades"} />
       <Skills />
       <Footer />
     </>
