@@ -49,7 +49,7 @@ function Banner() {
                     <a
                         className="link"
                         id="contato"
-                        href="footer_container"
+                        href="#footer_container"
                     >
                         &lt;{languageEn? "Contact Info" : "Contato"} /&gt;
                     </a>

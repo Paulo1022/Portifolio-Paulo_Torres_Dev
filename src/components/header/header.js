@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import "./header.css";
 import { BsWhatsapp } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
 import styled from "styled-components";
 import { LanguageContext } from "../../contexts/languageContext";
 import USA from "../../assets/flags/united-states.png";
@@ -74,6 +75,12 @@ function Header() {
                 <div id="contacts">
                     <a href="https://wa.me/5561998406766" target="blank">
                         <BsWhatsapp
+                            className="headerIcon"
+                            style={{color: scrolled? "#F8F9FA" : "black"}}
+                        />
+                    </a>
+                    <a href="https://www.linkedin.com/in/paulo-torres-1ab888342/" target="blank">
+                        <FaLinkedin
                             className="headerIcon"
                             style={{color: scrolled? "#F8F9FA" : "black"}}
                         />
