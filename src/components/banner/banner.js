@@ -42,7 +42,7 @@ function Banner() {
                     <a
                         className="link"
                         id="curriculo"
-                        href="https://drive.google.com/file/d/1AWIFEjBH2eATnSrhhdyBBLv1pY88eGUF/view?usp=drive_link"
+                        href="https://drive.google.com/file/d/1cbIo50KrZp6Z7QGGYQtYjt-11II6QlXr/view?usp=sharing"
                     >
                         &lt;{languageEn? "Resume" : "Currículo"} /&gt;
                     </a>
