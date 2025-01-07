@@ -1,10 +1,12 @@
 import React, { useContext } from "react";
 import "./banner.css";
 import { LanguageContext } from "../../contexts/languageContext";
+import { ModalContext } from "../../contexts/modalContext";
 
 function Banner() {
 
     const { languageEn } = useContext(LanguageContext);
+    const { setShowModal } = useContext(ModalContext);
 
     return (
         <div id="bannerContainer">
@@ -46,13 +48,13 @@ function Banner() {
                     >
                         &lt;{languageEn? "Resume" : "Currículo"} /&gt;
                     </a>
-                    <a
+                    <div
                         className="link"
                         id="contato"
-                        href="#footer_container"
+                        onClick={()=>setShowModal(true)}
                     >
                         &lt;{languageEn? "Contact Info" : "Contato"} /&gt;
-                    </a>
+                    </div>
                 </div>
             </div>
             <div id="bannerImage"></div>

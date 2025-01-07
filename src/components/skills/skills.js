@@ -58,7 +58,10 @@ function Skills() {
 
     return (
         <div id="skillsContainer">
-            <div id={clicked? "containerSkillsCardsOpened" : "containerSkillsCardsClosed"}>
+            <div
+                id={clicked? "containerSkillsCardsOpened" : "containerSkillsCardsClosed"}
+                className="containerSkillsCards"
+            >
                 {cards.map((item) => (
                     <div className="skillCard">
                         {item.image}

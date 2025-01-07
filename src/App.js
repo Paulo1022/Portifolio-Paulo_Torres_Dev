@@ -7,6 +7,7 @@ import Header from './components/header/header';
 import Projects from './components/projects/projects';
 import Skills from './components/skills/skills';
 import { LanguageContext } from './contexts/languageContext';
+import ModalContacts from './components/modalContacts/modalContacts';
 
 function App() {
   
@@ -14,6 +15,7 @@ function App() {
 
   return (
     <>
+      <ModalContacts />
       <Header />
       <Banner />
       <Division title={languageEn? "Projects" : "Projetos"} />

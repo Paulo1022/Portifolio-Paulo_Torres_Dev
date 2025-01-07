@@ -72,7 +72,7 @@ function Header() {
                 <Option href="#bannerContainer">{languageEn? "About Me" : "Sobre Mim"}</Option>
                 <Option href="#projectsContainer">{languageEn? "Projects" : "Projetos"}</Option>
                 <Option href="#skillsContainer">{languageEn? "Skills" : "Habilidades"}</Option>
-                <div id="contacts">
+                <div id="headerContacts">
                     <a href="https://wa.me/5561998406766" target="blank">
                         <BsWhatsapp
                             className="headerIcon"
