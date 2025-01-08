@@ -36,6 +36,12 @@
     justify-content: space-between;
 }
 
+#optionsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 #languageImage {
     width: 40px;
     height: 40px;
@@ -73,8 +79,8 @@
 @media (max-width: 760px) {
 
     #headerContainer {
-        display: block;
         height: 110px;
+        flex-direction: column;
     }
 
     #headerLinks {
@@ -84,8 +90,17 @@
 }
 
 @media (max-width: 480px) {
+    #headerContainer {
+        height: 150px;
+        justify-content: space-around;
+    }
 
     #nameTitle {
         font-size: 30px;
+    }
+
+    #headerLinks {
+        margin-top: 0;
+        flex-direction: column;
     }
 }

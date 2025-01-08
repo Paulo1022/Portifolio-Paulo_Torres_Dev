@@ -34,6 +34,7 @@ function Header() {
     const Image = styled.div`
         width: 30px;
         height: 30px;
+        margin: 7px;
         background-image: url(${languageEn? BRA : USA});
         background-size: cover;
         background-position: 50% 50%;
@@ -68,10 +69,12 @@ function Header() {
                 _Dev /&gt;
             </div>
             <div id="headerLinks">
+                <div id="optionsContainer">
+                    <Option href="#bannerContainer">{languageEn? "About Me" : "Sobre Mim"}</Option>
+                    <Option href="#projectsContainer">{languageEn? "Projects" : "Projetos"}</Option>
+                    <Option href="#skillsContainer">{languageEn? "Skills" : "Habilidades"}</Option>
+                </div>
                 <Image onClick={() => setLanguageEn(!languageEn)} />
-                <Option href="#bannerContainer">{languageEn? "About Me" : "Sobre Mim"}</Option>
-                <Option href="#projectsContainer">{languageEn? "Projects" : "Projetos"}</Option>
-                <Option href="#skillsContainer">{languageEn? "Skills" : "Habilidades"}</Option>
                 <div id="headerContacts">
                     <a href="https://wa.me/5561998406766" target="blank">
                         <BsWhatsapp

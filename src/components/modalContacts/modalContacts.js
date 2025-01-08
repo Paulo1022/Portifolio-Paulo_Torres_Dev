@@ -3,6 +3,7 @@ import styled from "styled-components";
 import "./modalContacts.css";
 import Contacts from "../contacts/contacts";
 import { ModalContext } from "../../contexts/modalContext";
+import { IoClose } from "react-icons/io5";
 
 function ModalContacts() {
 
@@ -22,7 +23,9 @@ function ModalContacts() {
 
     return (
         <ContactsModal>
-            <div id="exit_icon" onClick={()=>setShowModal(false)}></div>
+            <div id="close_icon_container" onClick={()=>setShowModal(false)}>
+                <IoClose id="close_icon" />
+            </div>
             <Contacts background="white" padding={25} />
         </ContactsModal>
     )

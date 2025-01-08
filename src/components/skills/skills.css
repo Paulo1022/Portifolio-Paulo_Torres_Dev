@@ -38,11 +38,6 @@
     transition: 0.5s;
 }
 
-.containerSkillsCards:has(.skillCard:hover) .skillCard:not(:hover) {
-    opacity: .6;
-    scale: .95;
-}
-
 .skillCard {
     width: 90%;
     height: 350px;
@@ -59,6 +54,11 @@
 
 .skillCard:hover {
     scale: 1.05;
+}
+
+.containerSkillsCards:has(.skillCard:hover) .skillCard:not(:hover) {
+    opacity: .6;
+    scale: .95;
 }
 
 .skillCardImage {

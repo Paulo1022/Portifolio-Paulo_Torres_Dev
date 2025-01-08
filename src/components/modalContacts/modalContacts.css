@@ -1,9 +1,18 @@
 
-#exit_icon {
+#close_icon_container {
     width: 40px;
     height: 40px;
     margin: 0 0 5px 0;
     border-radius: 50%;
     background-color: #343a40;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
+}
+
+#close_icon {
+    width: 25px;
+    height: 25px;
+    color: #F8F9FA;
 }

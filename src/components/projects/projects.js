@@ -75,7 +75,6 @@ function Projects() {
                             backgroundImage: `url(${item.image})`,
                             cursor: opened === item.number ? "" : "pointer"
                         }}
-                        onMouseOver={() => setOpened(item.number)}
                         onClick={() => setOpened(item.number)}
                     >
                         <div className="titleContainer">
