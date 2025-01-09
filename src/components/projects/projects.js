@@ -1,5 +1,6 @@
 import React, { useContext, useState } from "react";
 import "./projects.css";
+import EShop from "../../assets/projectsCards/screencapture-Paulo_Torres_E-Shop.png";
 import Looneta from "../../assets/projectsCards/screencapture-Looneta_Site.png";
 import Aquaman from "../../assets/projectsCards/screencapture-Aquaman_App.png";
 import PetLife from "../../assets/projectsCards/screencapture-PetLife.png";
@@ -10,6 +11,16 @@ import { LanguageContext } from "../../contexts/languageContext";
 const projectCards = [
     {
         number: 1,
+        titleEN: "Ecommerce Shop Website",
+        titlePT: "Site Ecommerce Shop",
+        image: EShop,
+        textEN: "Dedicated ecommerce functionality website with an interface built using Tailwind CSS and React.",
+        textPT: "Site de funcionalidade dedicada para ecommerce com interface produzida usando Tailwind CSS e React.",
+        deploy: "https://paulotorres-ecomerceshop.firebaseapp.com/",
+        github: "https://github.com/Paulo1022/ecommerce_shop"
+    },
+    {
+        number: 2,
         titleEN: "Looneta Band Website",
         titlePT: "Site Banda Looneta",
         image: Looneta,
@@ -19,7 +30,7 @@ const projectCards = [
         github: "https://github.com/Paulo1022/Looneta-Site"
     },
     {
-        number: 2,
+        number: 3,
         titleEN: "PetLife Website",
         titlePT: "Site PetLife",
         image: PetLife,
@@ -29,7 +40,7 @@ const projectCards = [
         github: "https://github.com/Paulo1022/PetLife"
     },
     {
-        number: 3,
+        number: 4,
         titleEN: "API Star Wars Website",
         titlePT: "Site de API Star Wars",
         image: StarWars,
@@ -39,7 +50,7 @@ const projectCards = [
         github: "https://github.com/Paulo1022/Star-Wars-Personagens"
     },
     {
-        number: 4,
+        number: 5,
         titleEN: "Promotional Website for movie Aquaman 2",
         titlePT: "Site de divulgação para Aquaman 2",
         image: Aquaman,
@@ -49,7 +60,7 @@ const projectCards = [
         github: "https://github.com/Paulo1022/Aquaman-App"
     },
     // {
-    //     number: 5,
+    //     number: 6,
     //     title: "Youtube’s Interface Clone",
     //     image: YouTube,
     //     textEN: "Aplication developed after Youtube’s model, using JavaScript, CSS 3, SQL Database and React.",
