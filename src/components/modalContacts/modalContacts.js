@@ -17,7 +17,7 @@ function ModalContacts() {
         align-items: center;
         justify-content: center;
         position: fixed;
-        z-index: 10;
+        z-index: 11;
         background-color: rgba(0, 0, 0, 0.6);
     `;
 

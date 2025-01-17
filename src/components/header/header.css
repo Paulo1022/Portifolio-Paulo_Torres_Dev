@@ -29,6 +29,15 @@
     transition: 0.5s;
 }
 
+#hamburgerContainer {
+    display: none;
+}
+
+#hamburgerIcon {
+    width: 30px;
+    height: 30px;
+}
+
 #headerLinks {
     padding-right: 20px;
     display: flex;
@@ -91,7 +100,7 @@
 
 @media (max-width: 480px) {
     #headerContainer {
-        height: 150px;
+        height: 100px;
         justify-content: space-around;
     }
 
@@ -99,8 +108,11 @@
         font-size: 30px;
     }
 
+    #hamburgerContainer {
+        display: block;
+    }
+
     #headerLinks {
-        margin-top: 0;
-        flex-direction: column;
+        display: none;
     }
 }

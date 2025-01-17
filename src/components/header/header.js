@@ -3,8 +3,10 @@ import "./header.css";
 import { BsWhatsapp } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
+import { RxHamburgerMenu } from "react-icons/rx";
 import styled from "styled-components";
 import { LanguageContext } from "../../contexts/languageContext";
+import { MenuContext } from "../../contexts/menuContext";
 import USA from "../../assets/flags/united-states.png";
 import BRA from "../../assets/flags/brazil-.png";
 
@@ -12,6 +14,7 @@ function Header() {
 
     let [scrolled, setScrolled] = useState(false);
     const {languageEn, setLanguageEn} = useContext(LanguageContext);
+    const {setShowMenu} = useContext(MenuContext);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -31,16 +34,6 @@ function Header() {
 
     }, []);
 
-    const Image = styled.div`
-        width: 30px;
-        height: 30px;
-        margin: 7px;
-        background-image: url(${languageEn? BRA : USA});
-        background-size: cover;
-        background-position: 50% 50%;
-        cursor: pointer;
-    `;
-
     const Option = styled.a`
         margin: 0 10px;
         font-size: 20px;
@@ -50,10 +43,20 @@ function Header() {
         cursor: pointer;
         border-radius: 20px;
         transition: 0.5s;
-
+        
         &:hover {
             transform: scale(1.15);
         }
+    `;
+
+    const LanguageHeader = styled.div`
+        width: 30px;
+        height: 30px;
+        margin: 7px;
+        background-image: url(${languageEn? BRA : USA});
+        background-size: cover;
+        background-position: 50% 50%;
+        cursor: pointer;
     `;
 
     return (
@@ -68,13 +71,16 @@ function Header() {
                 <span className="headerSpan" style={{color: scrolled? "#F8F9FA" : "black"}}>Torres</span>
                 _Dev /&gt;
             </div>
+            <div id="hamburgerContainer" onClick={() => setShowMenu(true)}>
+                <RxHamburgerMenu id="hamburgerIcon" style={{color: scrolled? "#F8F9FA" : "black"}}/>
+            </div>
             <div id="headerLinks">
                 <div id="optionsContainer">
                     <Option href="#bannerContainer">{languageEn? "About Me" : "Sobre Mim"}</Option>
                     <Option href="#projectsContainer">{languageEn? "Projects" : "Projetos"}</Option>
                     <Option href="#skillsContainer">{languageEn? "Skills" : "Habilidades"}</Option>
                 </div>
-                <Image onClick={() => setLanguageEn(!languageEn)} />
+                <LanguageHeader onClick={() => setLanguageEn(!languageEn)} />
                 <div id="headerContacts">
                     <a href="https://wa.me/5561998406766" target="blank">
                         <BsWhatsapp

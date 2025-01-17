@@ -8,6 +8,8 @@ import Projects from './components/projects/projects';
 import Skills from './components/skills/skills';
 import { LanguageContext } from './contexts/languageContext';
 import ModalContacts from './components/modalContacts/modalContacts';
+import ResponsiveMenu from './components/responsiveMenu/resposiveMenu';
+import { MenuStore } from './contexts/menuContext';
 
 function App() {
   
@@ -16,7 +18,10 @@ function App() {
   return (
     <>
       <ModalContacts />
-      <Header />
+      <MenuStore>
+        <ResponsiveMenu />
+        <Header />
+      </MenuStore>
       <Banner />
       <Division title={languageEn? "Projects" : "Projetos"} />
       <Projects />
